@@ -8,6 +8,7 @@ import (
 )
 
 func main() {
+	// Создаем объект интерфейса, чтобы скрыть реализацию и добавить слой абстракции
 	var pool internal.WorkerPool = workerpool.NewWorkerPool()
 
 	workersNumber := 3 // Задаем кол-во воркеров
